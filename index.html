@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kenny — desarrollador de herramientas locales de audio e IA. Portafolio de proyectos en Linux, transcripción e interpretación en vivo." />
+  <meta name="description" content="Kenny — apasionado por automatizar y crear herramientas para el día a día en Linux (también abierto a Windows). Busco colaboradores y amigos con la misma pasión." />
   <meta name="theme-color" content="#0b0f14" />
   <title>Kenny · Portafolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +20,7 @@
       <nav class="nav" aria-label="Principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#colaborar">Colaborar</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <a class="btn btn-ghost" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -29,15 +30,16 @@
   <main id="contenido">
     <section id="inicio" class="hero">
       <div class="wrap hero-inner">
-        <p class="eyebrow">Desarrollador · Linux · Audio / IA</p>
-        <h1>Construyo herramientas locales que resuelven problemas reales.</h1>
+        <p class="eyebrow">Nuevo en esto · Linux · Automatización</p>
+        <h1>Me apasiona crear herramientas que resuelven el día a día.</h1>
         <p class="lede">
-          Soy Kenny. Diseño y armo sistemas de transcripción e interpretación en vivo,
-          guías claras para Linux y proyectos útiles — no demos vacías.
+          Soy Kenny. Estoy empezando en este camino y construyo cosas útiles —
+          sobre todo en Linux — para automatizar problemas reales. También estoy
+          abierto a Windows. Busco amigos y colaboradores que compartan esa pasión.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
-          <a class="btn btn-ghost" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">Abrir GitHub</a>
+          <a class="btn btn-ghost" href="#colaborar">Quiero colaborar</a>
         </div>
       </div>
     </section>
@@ -46,18 +48,24 @@
       <div class="wrap narrow">
         <h2>Sobre mí</h2>
         <p>
-          Trabajo sobre todo en <strong>Python</strong> y el ecosistema Linux:
-          captura de audio, Whisper, traducción en tiempo real y herramientas
-          que uso yo mismo. Itero en local hasta que funciona de verdad, y
-          publico en GitHub como respaldo y vitrina.
+          Soy relativamente nuevo en desarrollo, pero tengo claro el porqué:
+          <strong>automatizar y crear herramientas</strong> que ayuden a resolver
+          problemas cotidianos. Mi entorno principal es <strong>Linux</strong>;
+          si un proyecto lo pide, también puedo trabajar pensando en Windows.
         </p>
-        <ul class="tags" aria-label="Stack">
-          <li>Python</li>
-          <li>faster-whisper</li>
-          <li>Linux / PipeWire</li>
-          <li>HTML &amp; CSS</li>
-          <li>APIs de traducción</li>
+        <p>
+          Tengo ideas y proyectos a medias que necesitan refuerzo — alguien con
+          quien pensar, mejorar y sacarlas a la luz. Me encantaría
+          <strong>colaborar en proyectos de otros</strong> y también
+          <strong>recibir apoyo en los míos</strong>.
+        </p>
+        <ul class="tags" aria-label="Enfoque">
+          <li>Automatización</li>
           <li>Herramientas locales</li>
+          <li>Linux</li>
+          <li>Audio / IA</li>
+          <li>Python</li>
+          <li>Código abierto</li>
         </ul>
       </div>
     </section>
@@ -66,29 +74,30 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Proyectos destacados</h2>
-          <p>Lo que alguien debería mirar primero en mi GitHub.</p>
+          <p>Algunos ya públicos; otros siguen en proceso y buscan ideas o manos.</p>
         </div>
         <div class="grid">
+          <article class="card card-featured">
+            <p class="card-meta">Comunidad abierta · Python · Linux</p>
+            <h3>live-caption-linux</h3>
+            <p>
+              Subtítulos en tiempo real en Linux. Quiero que sea un proyecto de
+              comunidad: opiniones, sugerencias y mejoras son bienvenidas.
+              Si lo ves, comenta o abre un issue — tu feedback cuenta.
+            </p>
+            <a class="card-link" href="https://github.com/Elkenniss/live-caption-linux" target="_blank" rel="noopener noreferrer">
+              Unirse / opinar en GitHub <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
           <article class="card">
             <p class="card-meta">Python · Whisper · DeepL</p>
             <h3>interprete</h3>
             <p>
               Intérprete en vivo para llamadas OPI: transcribe y traduce
-              español ↔ inglés en tiempo real, con panel en el navegador.
+              español ↔ inglés en tiempo real.
             </p>
             <a class="card-link" href="https://github.com/Elkenniss/interprete" target="_blank" rel="noopener noreferrer">
-              Ver en GitHub <span aria-hidden="true">→</span>
-            </a>
-          </article>
-
-          <article class="card">
-            <p class="card-meta">Python · Linux · CUDA</p>
-            <h3>live-caption-linux</h3>
-            <p>
-              Subtítulos en tiempo real en Linux: captura el audio del sistema,
-              VAD y faster-whisper con soporte GPU.
-            </p>
-            <a class="card-link" href="https://github.com/Elkenniss/live-caption-linux" target="_blank" rel="noopener noreferrer">
               Ver en GitHub <span aria-hidden="true">→</span>
             </a>
           </article>
@@ -97,8 +106,8 @@
             <p class="card-meta">Documentación · Linux · EN/ES</p>
             <h3>ascension-linux-guide</h3>
             <p>
-              Guía paso a paso para instalar Ascension en Linux con Lutris/Wine:
-              cada error que apareció y su fix exacto.
+              Guía paso a paso para instalar Ascension en Linux: errores reales
+              y sus fixes exactos.
             </p>
             <a class="card-link" href="https://github.com/Elkenniss/ascension-linux-guide" target="_blank" rel="noopener noreferrer">
               Ver en GitHub <span aria-hidden="true">→</span>
@@ -108,16 +117,40 @@
       </div>
     </section>
 
-    <section id="contacto" class="section">
-      <div class="wrap narrow cta">
-        <h2>¿Quieres ver más?</h2>
+    <section id="colaborar" class="section">
+      <div class="wrap narrow">
+        <h2>Colaborar</h2>
         <p>
-          El resto del trabajo está en GitHub: código, guías y experimentos.
-          Si te interesa colaborar o revisar un repo, empieza ahí.
+          Si compartes la pasión por construir herramientas útiles, hablemos.
+          Da igual si quieres aportar a uno de mis repos, revisar una idea a medias,
+          o si yo puedo ayudar en algo tuyo.
         </p>
-        <a class="btn btn-primary" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">
-          github.com/Elkenniss
-        </a>
+        <ul class="collab-list">
+          <li>Opiniones y sugerencias en <a href="https://github.com/Elkenniss/live-caption-linux" target="_blank" rel="noopener noreferrer">live-caption-linux</a></li>
+          <li>Issues, PRs o simplemente un “hola, se me ocurre…”</li>
+          <li>Ideas para proyectos que aún no están listos para salir</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-alt">
+      <div class="wrap narrow cta">
+        <h2>Contacto</h2>
+        <p>Estoy abierto a charlar, colaborar o simplemente conectar.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:donalitomontenegro@gmail.com">donalitomontenegro@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Teléfono / WhatsApp</span>
+            <a href="https://wa.me/50586194445">+505 8619 4445</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">github.com/Elkenniss</a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -125,7 +158,7 @@
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© <span id="year"></span> Kenny · Elkenniss</p>
-      <a href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:donalitomontenegro@gmail.com">Escribirme</a>
     </div>
   </footer>
 
