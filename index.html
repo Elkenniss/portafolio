@@ -1,115 +1,136 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-    <link rel="stylesheet" href="styles.css" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kenny — desarrollador de herramientas locales de audio e IA. Portafolio de proyectos en Linux, transcripción e interpretación en vivo." />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Kenny · Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <body>
-     <header>
-        
-        <h1>Kenny</h1>
-        
-        
-     <nav>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#inicio">Kenny</a>
+      <nav class="nav" aria-label="Principal">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#formulario">Formulario</a>
-         <a href="#contacto">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
+      <a class="btn btn-ghost" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </header>
 
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Desarrollador · Linux · Audio / IA</p>
+        <h1>Construyo herramientas locales que resuelven problemas reales.</h1>
+        <p class="lede">
+          Soy Kenny. Diseño y armo sistemas de transcripción e interpretación en vivo,
+          guías claras para Linux y proyectos útiles — no demos vacías.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">Abrir GitHub</a>
+        </div>
+      </div>
+    </section>
 
+    <section id="sobre-mi" class="section">
+      <div class="wrap narrow">
+        <h2>Sobre mí</h2>
+        <p>
+          Trabajo sobre todo en <strong>Python</strong> y el ecosistema Linux:
+          captura de audio, Whisper, traducción en tiempo real y herramientas
+          que uso yo mismo. Itero en local hasta que funciona de verdad, y
+          publico en GitHub como respaldo y vitrina.
+        </p>
+        <ul class="tags" aria-label="Stack">
+          <li>Python</li>
+          <li>faster-whisper</li>
+          <li>Linux / PipeWire</li>
+          <li>HTML &amp; CSS</li>
+          <li>APIs de traducción</li>
+          <li>Herramientas locales</li>
+        </ul>
+      </div>
+    </section>
 
+    <section id="proyectos" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Proyectos destacados</h2>
+          <p>Lo que alguien debería mirar primero en mi GitHub.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <p class="card-meta">Python · Whisper · DeepL</p>
+            <h3>interprete</h3>
+            <p>
+              Intérprete en vivo para llamadas OPI: transcribe y traduce
+              español ↔ inglés en tiempo real, con panel en el navegador.
+            </p>
+            <a class="card-link" href="https://github.com/Elkenniss/interprete" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
+          <article class="card">
+            <p class="card-meta">Python · Linux · CUDA</p>
+            <h3>live-caption-linux</h3>
+            <p>
+              Subtítulos en tiempo real en Linux: captura el audio del sistema,
+              VAD y faster-whisper con soporte GPU.
+            </p>
+            <a class="card-link" href="https://github.com/Elkenniss/live-caption-linux" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
+          <article class="card">
+            <p class="card-meta">Documentación · Linux · EN/ES</p>
+            <h3>ascension-linux-guide</h3>
+            <p>
+              Guía paso a paso para instalar Ascension en Linux con Lutris/Wine:
+              cada error que apareció y su fix exacto.
+            </p>
+            <a class="card-link" href="https://github.com/Elkenniss/ascension-linux-guide" target="_blank" rel="noopener noreferrer">
+              Ver en GitHub <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-     <main>
+    <section id="contacto" class="section">
+      <div class="wrap narrow cta">
+        <h2>¿Quieres ver más?</h2>
+        <p>
+          El resto del trabajo está en GitHub: código, guías y experimentos.
+          Si te interesa colaborar o revisar un repo, empieza ahí.
+        </p>
+        <a class="btn btn-primary" href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">
+          github.com/Elkenniss
+        </a>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Kenny · Elkenniss</p>
+      <a href="https://github.com/Elkenniss" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
 
-       <section id="sobre-mi"> Sobre mí </section>
-       <h2>Sobre mi</h2>
-       <p>Hola, soy Kenny, un desarrollador web apasionado por crear experiencias digitales</p>
-
-
-       <section id="proyectos"> Proyectos</section>
-       <h2>Proyectos</h2>
-       <div class="proyecto-grid">
-  
-    <article class="tarjeta">
-        
-           <h3> Mi tiendita</h3>
-        <p>Una tienda en línea para productos de tecnología</p>
-<a href="#">Ver proyecto</a>
-    </article>
-    <article class="tarjeta">
-        <h3>Mapa interactivo</h3>
-        <p>Un mapa interactivo para explorar lugares turísticos</p>
-<a href="#">Ver proyecto</a>
-    </article>
-
-    <article class="tarjeta">
-        <h3>Stock Tracker</h3>
-        <p>Una aplicación para rastrear el mercado de valores en tiempo real</p>
-<a href="#">Ver proyecto</a>
-    </article>
-
-    article class="tarjeta">
-        <h3>Noticiero Whatsapp</h3>
-        <p>Un bot de WhatsApp que envía noticias diarias a los usuarios</p>
-<a href="https://github.com/Elkenniss/noticiero-whatsapp">Ver proyecto</a>
-    </article>
-        
-        
-
-
-
-        
-       </div>
-      
-       <section id="formulario"> formulario </section>
-
-
-
-
-      <section id="contacto">
-        <h2>Contacto</h2>
-
-<form>
-
- <label for="correo">Tu Correo:</label>
-<input type="email" id="correo" name="correo" required>
-<label for="mensaje">Mensaje:</label>
-<textarea id="mensaje" name="mensaje" required></textarea>
-<button type="submit">Enviar</button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</form>
-
-
-
-      </section>
-
-
-
-     </main>
-
-
-
-
-
-     <footer>     <a href="https://github.com/Elkenniss" >Mi github</a> </footer>
-   </body>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
